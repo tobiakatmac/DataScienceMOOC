@@ -107,3 +107,9 @@ dataSummary[1:dim(dataID)[1],] <- dataID
 dataSummary[(dim(dataID)[1]+1):dim(dataSummary)[1],] <- dataActiv
 names(dataSummary) <- names(dataID)
 names(dataSummary)[1] <- "ID/ activity"
+
+# Exporting data frames data and dataSummary to .txt file
+setwd(parentFolder)
+setwd("..")
+write.table(data, file="data.txt", sep="\t")
+write.table(dataSummary, file="dataSummary.txt", sep="\t")
