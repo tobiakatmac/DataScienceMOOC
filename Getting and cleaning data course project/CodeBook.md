@@ -3,7 +3,9 @@ Code book
 Getting and Cleaning Data Course Project
 ----------------------------------------
 
-There are two data set:
+NOTE: data frames are denoted by *data frame*
+
+There are two data frames:
 1. *data* contains the participant ID, activity and mean & standard deviation over one sliding window of the sensor signals
 2. *dataSummary* a summary of the data with the averaged values grouped by participant ID and by activity
 
@@ -19,7 +21,7 @@ regarding 2.:
 * *data* was summarized by taking the mean over each element of the groups 
 * NOTE: *dataSummary* is not strictly a "tidy" data set as participant ID and activity are listed in one column. However, like this all the elements of the groups are in one column. 
 
-Variables of *data*
+#### Variables of *data* ####
 1. "participant_ID": number label assigned to each participant (30 in total) 
 2. "activity": activity (walk, walk up, walk down, sit, stand, lay) during which the sensor signal was measured
 3. "body_acc_x_mean": averaged accelerometer signal over one slicing window measured in x direction 
@@ -41,6 +43,6 @@ Variables of *data*
 19. "total_acc_z_mean": see 15. but in z direction 
 20. "total_acc_z_sd": see 16. but in z direction
 
-Variables of *dataSummary*
+#### Variables of *dataSummary* ####
 1. "ID/ activity": showing number label or activity
 2. to 19. equal to 3. to 20. of *data* but averaged values based on participant or activity specified in 1.

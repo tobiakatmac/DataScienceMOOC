@@ -3,10 +3,10 @@ README.md
 Getting and Cleaning Data Course Project
 ----------------------------------------
 
-Description of R script called run_analysis.R
+Description of R script called run_analysis.R  
 NOTE: data frames are denoted by *data frame*
 
-*Setting of work directory to parent data folder "UCI HAR Dataset"
+#### Setting of work directory to parent data folder "UCI HAR Dataset" ####
 
 #### Loading of test data ####
 * Load participant ID from "subject_test.txt"
