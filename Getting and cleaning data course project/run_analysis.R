@@ -111,5 +111,7 @@ names(dataSummary)[1] <- "ID/ activity"
 # Exporting data frames data and dataSummary to .txt file
 setwd(parentFolder)
 setwd("..")
-write.table(data, file="data.txt", sep="\t")
-write.table(dataSummary, file="dataSummary.txt", sep="\t")
+write.table(data, file="data.txt", sep="\t", row.name=FALSE)
+write.table(dataSummary, file="dataSummary.txt", sep="\t", row.name=FALSE)
+write.csv(data, file="data.csv")
+write.csv(dataSummary, file="dataSummary.csv")
